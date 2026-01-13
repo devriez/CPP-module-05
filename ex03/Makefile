@@ -6,7 +6,7 @@
 #    By: amoiseik <amoiseik@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/09 15:28:22 by amoiseik          #+#    #+#              #
-#    Updated: 2026/01/12 18:06:01 by amoiseik         ###   ########.fr        #
+#    Updated: 2026/01/13 14:09:39 by amoiseik         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,6 +17,7 @@ CXXFLAGS	= -Wall -Werror -Wextra -std=c++98
 SRCS	=	main.cpp \
 			AForm.cpp \
 			Bureaucrat.cpp \
+			Intern.cpp \
 			PresidentialPardonForm.cpp \
 			RobotomyRequestForm.cpp \
 			ShrubberyCreationForm.cpp

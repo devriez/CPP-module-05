@@ -6,7 +6,7 @@
 /*   By: amoiseik <amoiseik@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/05 19:15:19 by amoiseik          #+#    #+#             */
-/*   Updated: 2026/01/09 15:23:52 by amoiseik         ###   ########.fr       */
+/*   Updated: 2026/01/12 19:50:53 by amoiseik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ Form::Form(const std::string& name, bool isSigned, const int gradeToSign, const 
 
 Form::Form(const Form& other) : 
 		_name(other._name),
-		_isSigned(false),
+		_isSigned(other._isSigned),
 		_GRADE_TO_SIGN(other._GRADE_TO_SIGN),
 		_GRADE_TO_EXECUTE(other._GRADE_TO_EXECUTE) {
 	std::cout << "Form. Copy constructor called" << std::endl;

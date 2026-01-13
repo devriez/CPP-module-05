@@ -1,32 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   RobotomyRequestForm.hpp                            :+:      :+:    :+:   */
+/*   PresidentialPardonForm.hpp                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amoiseik <amoiseik@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/10 14:52:12 by amoiseik          #+#    #+#             */
-/*   Updated: 2026/01/12 17:45:43 by amoiseik         ###   ########.fr       */
+/*   Created: 2026/01/12 16:04:13 by amoiseik          #+#    #+#             */
+/*   Updated: 2026/01/12 17:45:29 by amoiseik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ROBOTOMY_REQUEST_FORM_HPP
-# define ROBOTOMY_REQUEST_FORM_HPP
+#ifndef PRESIDENTIAL_PARDON_FORM_HPP
+# define PRESIDENTIAL_PARDON_FORM_HPP
 
 # include "AForm.hpp"
-# include <cstdlib>
-# include <ctime>
+# include <fstream>
 
-class RobotomyRequestForm : public AForm {
+class PresidentialPardonForm : public AForm{
 	private:
 		std::string		_target;
 		virtual void	_action() const;
 	public:
-		RobotomyRequestForm();
-		RobotomyRequestForm(const std::string& target);
-		RobotomyRequestForm(const RobotomyRequestForm& other);
-		RobotomyRequestForm& operator=(const RobotomyRequestForm& other);
-		virtual ~RobotomyRequestForm();
+		PresidentialPardonForm();
+		PresidentialPardonForm(const std::string& target);
+		PresidentialPardonForm(const PresidentialPardonForm& other);
+		PresidentialPardonForm& operator=(const PresidentialPardonForm& other);
+		virtual	~PresidentialPardonForm();
 };
 
 #endif
